@@ -3281,7 +3281,7 @@ trackerCapture.controller('DataEntryController',
             return;
         }
         
-        $window.open('../api/events/files?eventUid=' + eventUid +'&dataElementUid=' + dataElementUid, '_blank', '');
+        $window.open('../../../api/events/files?eventUid=' + eventUid +'&dataElementUid=' + dataElementUid, '_blank', '');
         if(e){
             e.stopPropagation();
             e.preventDefault();

@@ -11,7 +11,7 @@ function getBaseUrl(predefLocation) {
         return predefLocation;
     }
 
-    return '../api';
+    return '../../../api';
 }
 
 export function initHeaderBar(domElement, apiLocation, config = {}) {

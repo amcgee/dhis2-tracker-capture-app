@@ -20,7 +20,7 @@
 
         <%= htmlWebpackPlugin.options.stylesheets(webpack.hash) %>
 
-        <link type="text/css" rel="stylesheet" href="../api/files/style" />
+        <link type="text/css" rel="stylesheet" href="../../../api/files/style" />
         
         <script src="vendor/jquery/3.2.0/dist/jquery.js"></script>
         <script src="vendor/jquery-migrate/3.0.0/dist/jquery-migrate.min.js"></script>
@@ -113,13 +113,13 @@
         <script>
             // Needs to be wrapped in jQuery to be sure the DOM is parsed as the script is not at the bottom.
             jQuery(function () {
-                Dhis2HeaderBar.initHeaderBar(document.querySelector('#header'), '../api', { noLoadingIndicator: true });
+                Dhis2HeaderBar.initHeaderBar(document.querySelector('#header'), '../../../api', { noLoadingIndicator: true });
             });
         </script>
         
         <%= htmlWebpackPlugin.options.scripts(webpack.hash) %>
 
-        <script src="../api/files/script"></script>
+        <script src="../../../api/files/script"></script>
 
     </head>
     <body>

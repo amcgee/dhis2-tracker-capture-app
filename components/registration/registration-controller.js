@@ -1356,7 +1356,7 @@ trackerCapture.controller('RegistrationController',
             return;
         }
         
-        $window.open('../api/trackedEntityInstances/' + tei.trackedEntityInstance + '/' + attributeId + '/image', '_blank', '');
+        $window.open('../../../api/trackedEntityInstances/' + tei.trackedEntityInstance + '/' + attributeId + '/image', '_blank', '');
     };
 
     $scope.setDateOnFocus = function(currentValue, date) {

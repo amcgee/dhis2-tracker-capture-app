@@ -58,8 +58,8 @@ dhis2.commons.redirectCurrentPage = function( url ) {
 // -----------------------------------------------------------------------------
 
 var headerMessageTimeout = -1;
-var _loading_bar_html = "<span id='loaderSpan'><img src='../images/ajax-loader-bar.gif'></span>";
-var _loading_circle_html = "<span id='loaderSpan'><img src='../images/ajax-loader-circle.gif'></span>";
+var _loading_bar_html = "<span id='loaderSpan'><img src='../../../images/ajax-loader-bar.gif'></span>";
+var _loading_circle_html = "<span id='loaderSpan'><img src='../../../images/ajax-loader-circle.gif'></span>";
 
 /**
  * Go back using the document.referrer.
@@ -164,7 +164,7 @@ function joinNameableObjects( objects )
 function getHelpContent( id )
 {
     $.get( 
-       '../dhis-web-commons-about/getHelpContent.action',
+       '../../../dhis-web-commons-about/getHelpContent.action',
        { "id": id },
        function( data )
        {
@@ -1785,7 +1785,7 @@ function pingNotifications( category, tableId, completedCallback )
 	
 	var param = ( undefined !== lastUid ) ? '?lastId=' + lastUid : '';
 	
-	$.getJSON( '../api/system/tasks/' + category + param, function( notifications )
+	$.getJSON( '../../../api/system/tasks/' + category + param, function( notifications )
 	{
 		var html = '',
 		    isComplete = false;

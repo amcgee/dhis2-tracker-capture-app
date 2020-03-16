@@ -20,7 +20,7 @@ var i18n_offline_notification = 'You are offline';
 var i18n_online_notification = 'You are online';
 var i18n_ajax_login_failed = 'Login failed, check your username and password and try again';
 
-var DHIS2URL = '../api';
+var DHIS2URL = '../../../api';
 var optionSetIds = [];
 var trackedEntityAttributeIds = [];
 var batchSize = 50;
@@ -118,7 +118,7 @@ function ajax_login()
         var username = $('#username').val();
         var password = $('#password').val();
 
-        $.post('../dhis-web-commons-security/login.action', {
+        $.post('../../../dhis-web-commons-security/login.action', {
             'j_username': username,
             'j_password': password
         }).success(function()
